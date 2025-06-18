@@ -1,0 +1,50 @@
+.r-portfolio {
+  &-cards-container {
+    margin-block-start: min(5rem, 5vh);
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+
+    @media screen and (min-width: 767px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (min-width: 991px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .portfolio-card {
+    border-radius: 1rem;
+
+    position: relative;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    &:hover .portfolio-card__overlay {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    &__overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background-color: var(--main-color-overlay);
+
+      visibility: hidden;
+      opacity: 0;
+
+      transition: visibility 0.35s ease-in-out,
+        opacity 0.35s ease-in-out;
+    }
+  }
+}
