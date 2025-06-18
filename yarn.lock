@@ -3867,6 +3867,7 @@ __metadata:
     karma-coverage: "npm:~2.2.0"
     karma-jasmine: "npm:~5.1.0"
     karma-jasmine-html-reporter: "npm:~2.1.0"
+    reset-zone: "npm:^3.0.0"
     rxjs: "npm:~7.8.0"
     tslib: "npm:^2.3.0"
     typescript: "npm:~5.7.2"
@@ -8200,6 +8201,13 @@ __metadata:
   version: 1.0.0
   resolution: "requires-port@npm:1.0.0"
   checksum: 10c0/b2bfdd09db16c082c4326e573a82c0771daaf7b53b9ce8ad60ea46aa6e30aaf475fe9b164800b89f93b748d2c234d8abff945d2551ba47bf5698e04cd7713267
+  languageName: node
+  linkType: hard
+
+"reset-zone@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "reset-zone@npm:3.0.0"
+  checksum: 10c0/243b9b85298ca314c855bc833a870a35cad527dc14e7e499172f0f8ce081f643cae198ab025293ff41a271348b75633e82bbdf4d27a82543bcc52fccf3e0449c
   languageName: node
   linkType: hard
 

@@ -35,6 +35,7 @@
               }
             ],
             "styles": [
+              "./node_modules/reset-zone/dist/reset-zone.regular.css",
               "src/styles.scss"
             ],
             "scripts": [],
