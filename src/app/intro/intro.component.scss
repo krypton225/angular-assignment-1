@@ -1,0 +1,61 @@
+.r-intro {
+  block-size: 100%;
+
+  background-color: var(--main-color);
+
+  color: var(--neutral-50);
+
+  &__body {
+    block-size: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    ::selection {
+      background-color: var(--secondary-color);
+      color: var(--neutral-50);
+    }
+
+    ::-moz-selection {
+      background-color: var(--secondary-color);
+      color: var(--neutral-50);
+    }
+  }
+
+  &__img {
+    inline-size: clamp(8rem, 25vw, 17rem);
+  }
+
+  &__list {
+    inline-size: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+
+    @media screen and (min-width: 576px) {
+      inline-size: auto;
+
+      flex-direction: row;
+    }
+  }
+
+  &__item {
+    font-size: var(--fs-md);
+    font-weight: var(--fw-500);
+    text-transform: capitalize;
+
+    @media screen and (min-width: 576px) {
+      &:not(:last-child)::after {
+        content: "-";
+
+        margin-inline-start: 0.5rem;
+      }
+    }
+
+  }
+}
