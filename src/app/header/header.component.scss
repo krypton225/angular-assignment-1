@@ -1,10 +1,22 @@
 .l-navbar {
   &__header {
-    padding-block: clamp(1.5rem, 3vw, 3rem);
+    padding-block: clamp(1.5rem, 2vw, 3rem);
 
     position: relative;
 
     background-color: var(--secondary-color);
+
+    transition: padding-block 0.35s ease-in-out,
+      inset-block-start 0.35s ease-in-out,
+      inset-inline 0.35s ease-in-out;
+
+    &.js-scrollable {
+      padding-block: clamp(1rem, 0.9vw, 1.75rem);
+
+      position: fixed;
+      inset-block-start: 0;
+      inset-inline: 0;
+    }
   }
 
   &__content {
