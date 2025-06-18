@@ -1,0 +1,38 @@
+.l-navbar {
+  &__header {
+    padding-block: clamp(1.5rem, 2vw, 3rem);
+
+    background-color: var(--secondary-color);
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    font-size: var(--fs-4xl);
+  }
+
+  &__logo,
+  &__link {
+    font-weight: var(--fw-700);
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: var(--neutral-50);
+  }
+
+  &__link {
+    padding-block: 1rem;
+
+    cursor: pointer;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+}
