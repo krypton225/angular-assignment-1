@@ -1,0 +1,37 @@
+.r-about {
+  block-size: 100%;
+
+  background-color: var(--main-color);
+
+  color: var(--neutral-50);
+
+  &__body {
+    block-size: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    ::selection {
+      background-color: var(--secondary-color);
+      color: var(--neutral-50);
+    }
+
+    ::-moz-selection {
+      background-color: var(--secondary-color);
+      color: var(--neutral-50);
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
+    gap: 2.5rem;
+  }
+
+  &__text {
+    font-size: var(--fs-sm);
+  }
+}
