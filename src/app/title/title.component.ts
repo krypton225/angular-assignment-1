@@ -7,5 +7,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './title.component.scss'
 })
 export class TitleComponent {
-  @Input() textColor?: string = 'white';
+  @Input() textColor?: string = 'light';
 }
