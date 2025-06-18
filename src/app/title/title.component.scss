@@ -1,0 +1,50 @@
+.c-title {
+  --color: var(--neutral-50);
+
+  &.white {
+    --color: var(--neutral-50);
+  }
+
+  &.dark {
+    --color: var(--neutral-900);
+  }
+
+  &__separator {
+    inline-size: clamp(10rem, 30vw, 20rem);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+
+    position: relative;
+  }
+
+  &__text {
+    font-size: var(--fs-2xl);
+    text-transform: uppercase;
+
+    color: var(--color);
+  }
+
+  &__line {
+    inline-size: 50%;
+    block-size: 0.2rem;
+
+    position: relative;
+
+    background-color: var(--color);
+
+    &:first-child {
+      inset-inline-start: 0;
+    }
+
+    &:last-child {
+      inset-inline-end: 0;
+    }
+  }
+
+  &__icon {
+    max-inline-size: 1.5rem;
+  }
+}
