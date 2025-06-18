@@ -1,0 +1,10 @@
+.l-footer {
+  padding-block: clamp(1.25rem, 2vw, 2.5rem);
+
+  font-size: var(--fs-sm);
+  text-align: center;
+
+  background-color: var(--secondary-color-darker);
+
+  color: var(--neutral-50);
+}
