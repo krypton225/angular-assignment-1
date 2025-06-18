@@ -1,1 +1,100 @@
-/* You can add global styles to this file, and also import other style files */
+@charset "UTF-8";
+
+:root {
+  --main-color: hsl(168, 76%, 42%);
+  --secondary-color: hsl(210, 29%, 24%);
+  --secondary-color-darker: hsl(209, 29%, 14%);
+}
+
+:root {
+  --neutral-50: hsl(0deg 0% 100%);
+  --neutral-100: hsl(0deg 0% 95%);
+  --neutral-150: hsl(0deg 0% 90%);
+  --neutral-200: hsl(0deg 0% 85%);
+  --neutral-250: hsl(0deg 0% 80%);
+  --neutral-300: hsl(0deg 0% 75%);
+  --neutral-350: hsl(0deg 0% 70%);
+  --neutral-400: hsl(0deg 0% 65%);
+  --neutral-450: hsl(0deg 0% 60%);
+  --neutral-500: hsl(0deg 0% 55%);
+  --neutral-550: hsl(0deg 0% 50%);
+  --neutral-600: hsl(0deg 0% 45%);
+  --neutral-650: hsl(0deg 0% 40%);
+  --neutral-700: hsl(0deg 0% 35%);
+  --neutral-750: hsl(0deg 0% 30%);
+  --neutral-800: hsl(0deg 0% 25%);
+  --neutral-850: hsl(0deg 0% 20%);
+  --neutral-900: hsl(0deg 0% 15%);
+  --neutral-950: hsl(0deg 0% 10%);
+}
+
+:root {
+  --fs-xs: clamp(0.75rem, calc(1vw + 0.4rem), 0.875rem);
+
+  --fs-sm: clamp(0.875rem, calc(1.2vw + 0.25rem), 1rem);
+
+  --fs-base: clamp(0.9rem, calc(0.5vw + 0.4rem), 1.125rem);
+
+  --fs-lg: clamp(1.125rem, calc(1.6vw + 0.7rem), 1.25rem);
+
+  --fs-xl: clamp(1.25rem, calc(1.8vw + 0.8rem), 1.5rem);
+
+  --fs-2xl: clamp(1.5rem, calc(2vw + 0.9rem), 1.75rem);
+
+  --fs-3xl: clamp(1.75rem, calc(2.2vw + 1rem), 1.875rem);
+
+  --fs-4xl: clamp(1.875rem, calc(2.4vw + 1.1rem), 2rem);
+}
+
+:root {
+  --ff: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans",
+    "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+
+  --fw-100: 100;
+  --fw-200: 200;
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-800: 800;
+  --fw-900: 900;
+}
+
+::selection {
+  background-color: var(--neutral-700);
+  color: var(--neutral-50);
+}
+
+::-moz-selection {
+  background-color: var(--neutral-700);
+  color: var(--neutral-50);
+}
+
+body {
+  font-family: var(--ff);
+}
+
+.container {
+  max-inline-size: 85rem;
+
+  margin-inline: auto;
+
+  padding-inline: 1.5rem;
+}
+
+.sr-only {
+  inline-size: 1px;
+  block-size: 1px;
+
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  white-space: nowrap;
+}
