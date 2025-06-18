@@ -2,25 +2,31 @@
   <nav class="l-navbar__navbar">
     <div class="container">
       <div class="l-navbar__content">
-        <a class="l-navbar__logo" routerLink="intro">
+        <a class="l-navbar__logo" routerLink="intro" (click)="closeMenu($event)">
           start framework
         </a>
 
-        <ul class="l-navbar__list" role="list">
+        <div class="l-navbar__toggler" (click)="toggleMenuHandler()">
+          <span class="l-navbar__bar"></span>
+          <span class="l-navbar__bar"></span>
+          <span class="l-navbar__bar"></span>
+        </div>
+
+        <ul class="l-navbar__list" role="list" (click)="closeMenu($event)" #togglerList>
           <li class="l-navbar__item">
-            <a class="l-navbar__link" routerLink="about">
+            <a class="l-navbar__link" routerLink="about" [routerLinkActive]="'is-current-router'">
               about
             </a>
           </li>
 
           <li class="l-navbar__item">
-            <a class="l-navbar__link" routerLink="portfolio">
+            <a class="l-navbar__link" routerLink="portfolio" [routerLinkActive]="'is-current-router'">
               portfolio
             </a>
           </li>
 
           <li class="l-navbar__item">
-            <a class="l-navbar__link" routerLink="contact">
+            <a class="l-navbar__link" routerLink="contact" [routerLinkActive]="'is-current-router'">
               contact
             </a>
           </li>
