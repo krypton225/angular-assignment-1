@@ -83,18 +83,3 @@ body {
 
   padding-inline: 1.5rem;
 }
-
-.sr-only {
-  inline-size: 1px;
-  block-size: 1px;
-
-  margin: -1px;
-  padding: 0;
-
-  border: 0;
-
-  position: absolute;
-  clip: rect(0, 0, 0, 0);
-  overflow: hidden;
-  white-space: nowrap;
-}
