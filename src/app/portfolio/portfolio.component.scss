@@ -1,4 +1,6 @@
 .r-portfolio {
+  padding-block: clamp(1rem, 3vw, 2rem);
+
   &-cards-container {
     margin-block-start: min(5rem, 5vh);
 
