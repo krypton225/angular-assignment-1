@@ -1,0 +1,23 @@
+.r-not-found {
+  block-size: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    font-size: var(--fs-lg);
+  }
+
+  &__img {
+    inline-size: clamp(5rem, 10vw, 17rem);
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
