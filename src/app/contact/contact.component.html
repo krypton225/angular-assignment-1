@@ -1,0 +1,36 @@
+<section class="r-contact">
+  <header class="r-contact__header">
+    <h2 class="sr-only">Contact section</h2>
+  </header>
+
+  <div class="r-contact__body container">
+    <app-title [textColor]="'dark'">
+      contact section
+    </app-title>
+
+    <div class="r-contact__form">
+      <div class="c-input">
+        <label for="name" class="c-input__label">Username</label>
+        <input type="text" id="name" class="c-input__field" placeholder="name" (input)="inputHandler($event)" />
+      </div>
+
+      <div class="c-input">
+        <label for="age" class="c-input__label">User's Age</label>
+        <input type="text" id="age" class="c-input__field" placeholder="age" (input)="inputHandler($event)" />
+      </div>
+
+      <div class="c-input">
+        <label for="email" class="c-input__label">User's Email</label>
+        <input type="email" id="email" class="c-input__field" placeholder="age" (input)="inputHandler($event)" />
+      </div>
+
+      <div class="c-input">
+        <label for="password" class="c-input__label">User's Password</label>
+        <input type="password" id="password" class="c-input__field" placeholder="password"
+          (input)="inputHandler($event)" />
+      </div>
+
+      <button type="button" class="c-button">send message</button>
+    </div>
+  </div>
+</section>

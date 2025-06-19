@@ -1,0 +1,100 @@
+.r-contact {
+  block-size: 100%;
+  padding-block: clamp(1rem, 3vw, 2rem);
+
+  &__body {
+    block-size: 100%;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__form {
+    inline-size: min(100%, 25rem);
+
+    padding-block-start: clamp(5rem, 10vh, 10rem);
+
+    margin-inline: auto;
+
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    .c-button {
+      align-self: flex-start;
+    }
+  }
+}
+
+.c-input {
+  inline-size: 100%;
+
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--neutral-50);
+
+  &__label {
+    position: absolute;
+    inset-block-end: 0;
+    inset-inline-start: 0;
+    z-index: -1;
+
+    color: var(--main-color);
+
+    transition: inset-block-end 0.35s ease-in-out;
+
+    &.js-show {
+      inset-block-end: 100%;
+    }
+  }
+
+  &__field {
+    inline-size: 100%;
+
+    border: 0;
+    outline: 0;
+
+    padding-block: 0.3rem;
+    padding-inline: 0.15rem;
+
+    border-block-end: 1px solid var(--neutral-200);
+
+    &::placeholder {
+      text-transform: capitalize;
+    }
+  }
+}
+
+.c-button {
+  padding-block: clamp(0.5rem, 1vw, 0.75rem);
+  padding-inline: clamp(1rem, 2vw, 1.5rem);
+
+  position: relative;
+
+  border: 0;
+  border-radius: 0.25rem;
+
+  outline: 0;
+
+  background-color: var(--main-color);
+  color: var(--neutral-50);
+
+  text-transform: capitalize;
+
+  cursor: pointer;
+
+  transition: background-color 0.35s ease-in-out;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--main-color-overlay);
+    }
+  }
+}
