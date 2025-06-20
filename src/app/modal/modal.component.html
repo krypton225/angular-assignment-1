@@ -1,0 +1,7 @@
+<div class="c-modal" #modal [class]="jsOpen ? 'js-open' : ''">
+  <div class="c-modal__overlay" #overlay (click)="onOverlayClick()"></div>
+
+  <div class="c-modal__content" (click)="onContentClick($event)">
+    <img [src]="imagePath" alt="Modal image" class="c-modal__img" draggable="false" />
+  </div>
+</div>
