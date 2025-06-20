@@ -1,4 +1,4 @@
-import { Routes } from '@angular/router';
+import { provideRouter, Routes, withInMemoryScrolling } from '@angular/router';
 
 export const routes: Routes = [
   {
@@ -32,3 +32,14 @@ export const routes: Routes = [
     title: `Not found page`,
   },
 ];
+
+export const appConfig = {
+  providers: [
+    provideRouter(
+      routes,
+      withInMemoryScrolling({
+        scrollPositionRestoration: 'top',
+      }),
+    ),
+  ],
+};
