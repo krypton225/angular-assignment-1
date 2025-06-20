@@ -8,7 +8,7 @@
       portfolio component
     </app-title>
 
-    <div class="r-portfolio-cards-container">
+    <div class="r-portfolio-cards-container" (click)="openModal($event)">
       @for (card of cards; track $index) {
       <div class="portfolio-card">
         <div class="portfolio-card__img">
@@ -34,3 +34,10 @@
     </div>
   </div>
 </section>
+
+<app-modal
+  [jsOpen]="isModalOpen"
+  [imagePath]="selectedImage"
+  [imageAlt]="selectedImageAlt"
+  (closeModal)="closeModal()">
+</app-modal>
